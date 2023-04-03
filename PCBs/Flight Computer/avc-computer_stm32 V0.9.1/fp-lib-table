@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name "Libraries")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries")(options "")(descr ""))
+  (lib (name "BNO085")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/BNO085/BNO085.pretty")(options "")(descr ""))
+  (lib (name "MP2307")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/MP2307")(options "")(descr ""))
+  (lib (name "ASPI-0630LR-100M-T15")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/ASPI-0630LR-100M-T15")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/BMP581/Library.pretty")(options "")(descr ""))
+  (lib (name "BMP581")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/BMP581/BMP581.pretty")(options "")(descr ""))
+  (lib (name "B320A-13-F")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/B320A-13-F")(options "")(descr ""))
+)

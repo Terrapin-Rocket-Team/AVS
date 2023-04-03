@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name "ESP-12F")(type "Legacy")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/ESP-12F.lib")(options "")(descr ""))
+  (lib (name "CP2102N-A02-GQFN24R")(type "Legacy")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/CP2102N-A02-GQFN24R USB to UART/CP2102N-A02-GQFN24R.lib")(options "")(descr ""))
+  (lib (name "BNO085")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/BNO085/BNO085.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS5405DR")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/TPS5405DR/TPS5405DR.kicad_sym")(options "")(descr ""))
+  (lib (name "MP2307")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/MP2307/MP2307.kicad_sym")(options "")(descr ""))
+  (lib (name "ASPI-0630LR-100M-T15")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/ASPI-0630LR-100M-T15/ASPI-0630LR-100M-T15.kicad_sym")(options "")(descr ""))
+  (lib (name "BMP581")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/BMP581/BMP581.kicad_sym")(options "")(descr ""))
+)

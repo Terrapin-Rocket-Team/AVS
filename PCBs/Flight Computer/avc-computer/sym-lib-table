@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "ESP-12F")(type "Legacy")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/ESP-12F.lib")(options "")(descr ""))
+  (lib (name "CP2102N-A02-GQFN24R")(type "Legacy")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/CP2102N-A02-GQFN24R USB to UART/CP2102N-A02-GQFN24R.lib")(options "")(descr ""))
+  (lib (name "BNO085")(type "KiCad")(uri "D:/Code/TRT23/2023/CAD/AVC/Flight Computer/Libraries/BNO085/BNO085.kicad_sym")(options "")(descr ""))
+)
