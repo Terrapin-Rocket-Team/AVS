@@ -541,10 +541,6 @@
       "Display"
     ],
     [
-      "76a7f044-0146-482a-8976-ba82aac9c5a2",
-      "Voltage Regulation"
-    ],
-    [
       "4dd05d53-4c8d-429b-829d-5feaddc3c9a0",
       "Storage"
     ],
@@ -553,8 +549,16 @@
       "Battery Connector"
     ],
     [
+      "d60cb1ec-d0e6-4346-99fe-4c14e34b9943",
+      "Voltage Regulator"
+    ],
+    [
       "144aa036-8f15-4412-804a-63168122b29e",
       "Wifi"
+    ],
+    [
+      "e9b8be52-4926-4d81-8d1e-4fa7fd6aec68",
+      "Barometric Pressure Sensor"
     ]
   ],
   "text_variables": {}

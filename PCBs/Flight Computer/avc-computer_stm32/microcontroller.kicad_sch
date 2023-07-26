@@ -830,7 +830,7 @@
   (symbol (lib_id "power:GND") (at 185.42 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0dc0813d-cbce-45dc-97f6-55ad4a95e3b7)
-    (property "Reference" "#PWR0162" (at 185.42 96.52 0)
+    (property "Reference" "#PWR015" (at 185.42 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 95.25 0)
@@ -846,7 +846,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0162") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -855,7 +855,7 @@
   (symbol (lib_id "power:GND") (at 147.32 125.73 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 16872fdd-8c6c-4def-88e5-e8d068ac77b4)
-    (property "Reference" "#PWR0104" (at 147.32 132.08 0)
+    (property "Reference" "#PWR013" (at 147.32 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 147.32 130.81 0)
@@ -871,7 +871,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0104") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -880,7 +880,7 @@
   (symbol (lib_id "power:GND") (at 128.27 59.69 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 31343646-4f8a-4a52-ab80-443a4e05358f)
-    (property "Reference" "#PWR0106" (at 121.92 59.69 0)
+    (property "Reference" "#PWR011" (at 121.92 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 59.69 90)
@@ -896,7 +896,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -905,7 +905,7 @@
   (symbol (lib_id "power:GND") (at 78.74 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 419316f6-ebd2-48c3-b6ae-a0179f58f4bc)
-    (property "Reference" "#PWR0113" (at 85.09 82.55 0)
+    (property "Reference" "#PWR06" (at 85.09 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 82.55 82.5499 90)
@@ -921,7 +921,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0113") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -930,7 +930,7 @@
   (symbol (lib_id "Device:R") (at 185.42 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 42d4f89a-d018-49ed-88a0-5362ffbc58ef)
-    (property "Reference" "R13" (at 187.96 85.0899 0)
+    (property "Reference" "R4" (at 187.96 85.0899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "200" (at 187.96 87.6299 0)
@@ -947,7 +947,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "R13") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -982,10 +982,10 @@
   (symbol (lib_id "Device:C") (at 158.75 39.37 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48b5eb8c-c7a7-42a0-9e32-47230771a4d8)
-    (property "Reference" "C4" (at 158.75 31.75 90)
+    (property "Reference" "C4" (at 158.75 33.02 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100nF" (at 158.75 34.29 90)
+    (property "Value" "100nF" (at 158.75 35.56 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 154.94 40.3352 0)
@@ -1008,10 +1008,10 @@
   (symbol (lib_id "Device:C") (at 130.81 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5cfc80ec-92f7-4c36-85fa-88f9175e7f0f)
-    (property "Reference" "C6" (at 134.62 31.7499 0)
+    (property "Reference" "C6" (at 134.62 32.385 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4.7uF" (at 134.62 34.2899 0)
+    (property "Value" "4.7uF" (at 134.62 34.925 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 131.7752 36.83 0)
@@ -1034,7 +1034,7 @@
   (symbol (lib_id "power:GND") (at 66.04 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ca220cc-6b27-4570-a0ed-749741ebba05)
-    (property "Reference" "#PWR0112" (at 66.04 111.76 0)
+    (property "Reference" "#PWR05" (at 66.04 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 66.04 110.49 0)
@@ -1050,7 +1050,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0112") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -1059,10 +1059,10 @@
   (symbol (lib_id "Connector:Conn_ARM_JTAG_SWD_10") (at 66.04 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 755131e0-78d1-4e70-9341-54dc3a448de6)
-    (property "Reference" "J1" (at 54.61 88.8999 0)
+    (property "Reference" "J1" (at 54.61 89.535 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "Conn_ARM_JTAG_SWD_10" (at 54.61 91.4399 0)
+    (property "Value" "Conn_ARM_JTAG_SWD_10" (at 54.61 92.075 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" (at 66.04 90.17 0)
@@ -1093,7 +1093,7 @@
   (symbol (lib_id "power:+3V3") (at 66.04 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76e8ba96-2790-4cc6-aaec-9ffcbf28c7f4)
-    (property "Reference" "#PWR0115" (at 66.04 78.74 0)
+    (property "Reference" "#PWR04" (at 66.04 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 66.04 69.85 0)
@@ -1109,7 +1109,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0115") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1118,10 +1118,10 @@
   (symbol (lib_id "Device:C") (at 153.67 21.59 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 78c0481d-cbf0-4968-86fb-e9ad8d29eb2d)
-    (property "Reference" "C2" (at 153.67 13.97 90)
+    (property "Reference" "C2" (at 153.67 15.24 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100nF" (at 153.67 16.51 90)
+    (property "Value" "100nF" (at 153.67 17.78 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 149.86 22.5552 0)
@@ -1144,7 +1144,7 @@
   (symbol (lib_id "power:GND") (at 63.5 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b53783c-263f-4ea2-a685-584537daddd1)
-    (property "Reference" "#PWR0114" (at 63.5 111.76 0)
+    (property "Reference" "#PWR03" (at 63.5 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 63.5 110.49 0)
@@ -1160,7 +1160,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -1169,7 +1169,7 @@
   (symbol (lib_id "power:GND") (at 165.1 48.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8733bd24-27f3-4cef-b548-4063e3969cda)
-    (property "Reference" "#PWR0101" (at 171.45 48.26 0)
+    (property "Reference" "#PWR014" (at 171.45 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 168.91 48.2599 90)
@@ -1185,7 +1185,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -1194,7 +1194,7 @@
   (symbol (lib_id "power:+3V3") (at 118.11 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 87c251ef-53f1-40bf-a120-5e0091af1177)
-    (property "Reference" "#PWR0117" (at 121.92 102.87 0)
+    (property "Reference" "#PWR08" (at 121.92 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 114.3 102.8699 90)
@@ -1210,7 +1210,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0117") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -1219,7 +1219,7 @@
   (symbol (lib_id "power:GND") (at 127 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8a2992d0-6b75-489f-ab19-d4fb4e23eb6f)
-    (property "Reference" "#PWR0107" (at 120.65 54.61 0)
+    (property "Reference" "#PWR010" (at 120.65 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 123.19 54.6099 90)
@@ -1235,7 +1235,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -1244,7 +1244,7 @@
   (symbol (lib_id "power:+3V3") (at 125.73 36.83 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8af662fa-4377-4555-a9ac-e38db97726f9)
-    (property "Reference" "#PWR0102" (at 129.54 36.83 0)
+    (property "Reference" "#PWR09" (at 129.54 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 121.92 36.8299 90)
@@ -1260,7 +1260,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1269,10 +1269,10 @@
   (symbol (lib_id "Device:C") (at 161.29 48.26 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a1d5b869-026e-431b-b90a-ea6cd200f0bc)
-    (property "Reference" "C5" (at 161.29 40.64 90)
+    (property "Reference" "C5" (at 161.29 41.91 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100nF" (at 161.29 43.18 90)
+    (property "Value" "100nF" (at 161.29 44.45 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 157.48 49.2252 0)
@@ -1321,10 +1321,10 @@
   (symbol (lib_id "Device:C") (at 130.81 54.61 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c5ec65fe-53e2-4dc0-8f33-a5f5c420cbb4)
-    (property "Reference" "C1" (at 130.81 46.99 90)
+    (property "Reference" "C1" (at 130.81 48.26 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100nF" (at 130.81 49.53 90)
+    (property "Value" "100nF" (at 130.81 50.8 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 127 55.5752 0)
@@ -1347,7 +1347,7 @@
   (symbol (lib_id "power:GND") (at 130.81 29.21 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca486652-d0e4-4b0b-b4eb-40f4a31159ac)
-    (property "Reference" "#PWR0103" (at 130.81 22.86 0)
+    (property "Reference" "#PWR012" (at 130.81 22.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 130.81 24.13 0)
@@ -1363,7 +1363,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -1372,10 +1372,10 @@
   (symbol (lib_id "Device:C") (at 156.21 30.48 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf88b6ce-5ed9-475d-b782-e41e9312a0ca)
-    (property "Reference" "C3" (at 156.21 22.86 90)
+    (property "Reference" "C3" (at 156.21 24.13 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100nF" (at 156.21 25.4 90)
+    (property "Value" "100nF" (at 156.21 26.67 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 152.4 31.4452 0)
@@ -1398,7 +1398,7 @@
   (symbol (lib_id "power:+3V3") (at 118.11 95.25 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dc9abb69-49b9-44d5-ab59-2374b8543201)
-    (property "Reference" "#PWR0116" (at 121.92 95.25 0)
+    (property "Reference" "#PWR07" (at 121.92 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 114.3 95.2499 90)
@@ -1414,7 +1414,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "#PWR0116") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -1423,7 +1423,7 @@
   (symbol (lib_id "Device:R") (at 185.42 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e758a4fe-10f5-4539-931d-908f71dd9e69)
-    (property "Reference" "R9" (at 187.96 77.4699 0)
+    (property "Reference" "R3" (at 187.96 77.4699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 187.96 80.0099 0)
@@ -1440,7 +1440,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "R9") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )

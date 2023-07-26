@@ -234,7 +234,7 @@
   (symbol (lib_id "power:GND") (at 139.7 73.66 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6bdd8f6b-9fc3-494b-ae93-6beb1b3025c7)
-    (property "Reference" "#PWR02" (at 139.7 80.01 0)
+    (property "Reference" "#PWR049" (at 139.7 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 78.74 0)
@@ -250,7 +250,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/144aa036-8f15-4412-804a-63168122b29e"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -259,11 +259,11 @@
   (symbol (lib_id "Connector_Generic:Conn_02x04_Odd_Even") (at 137.16 66.04 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 79a74106-7a42-40ce-9a76-6c1266384524)
-    (property "Reference" "J7" (at 129.54 67.945 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Reference" "J7" (at 142.24 66.675 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_02x04_Odd_Even" (at 129.54 65.405 90)
-      (effects (font (size 1.27 1.27)) (justify right))
+    (property "Value" "Conn_02x04_Odd_Even" (at 142.24 69.215 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" (at 137.16 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -291,7 +291,7 @@
   (symbol (lib_id "power:+3V3") (at 137.16 55.88 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d82bf85b-fa4f-4c0d-b8ec-ecd46dc428fa)
-    (property "Reference" "#PWR01" (at 137.16 59.69 0)
+    (property "Reference" "#PWR048" (at 137.16 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 137.16 50.8 0)
@@ -307,7 +307,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/144aa036-8f15-4412-804a-63168122b29e"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
