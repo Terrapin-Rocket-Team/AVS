@@ -173,10 +173,10 @@
   (symbol (lib_id "Connector_Generic:Conn_01x04") (at 165.1 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1a1ab757-51de-4969-8924-8675206b3aa2)
-    (property "Reference" "J6" (at 167.64 90.1699 0)
+    (property "Reference" "J6" (at 167.64 90.805 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "OLED Display" (at 167.64 92.7099 0)
+    (property "Value" "OLED Display" (at 167.64 93.345 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 165.1 90.17 0)
@@ -201,7 +201,7 @@
   (symbol (lib_id "power:+3V3") (at 160.02 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ae7960f-0076-4e49-8430-b01adb549410)
-    (property "Reference" "#PWR0164" (at 163.83 90.17 0)
+    (property "Reference" "#PWR028" (at 163.83 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 156.21 90.1699 90)
@@ -217,7 +217,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b9d51fc2-139c-4202-b21b-ffd40eaf3b64"
-          (reference "#PWR0164") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -226,7 +226,7 @@
   (symbol (lib_id "power:GND") (at 160.02 87.63 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9c17c4e-4fbc-46f6-b3c8-03e8d0edb5a1)
-    (property "Reference" "#PWR0163" (at 153.67 87.63 0)
+    (property "Reference" "#PWR027" (at 153.67 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 156.21 87.6299 90)
@@ -242,7 +242,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b9d51fc2-139c-4202-b21b-ffd40eaf3b64"
-          (reference "#PWR0163") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
