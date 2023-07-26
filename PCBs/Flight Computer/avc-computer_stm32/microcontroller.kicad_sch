@@ -746,6 +746,14 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 5c932b9e-a611-43c5-9015-3647510b1c61)
   )
+  (hierarchical_label "PWM2" (shape input) (at 167.64 97.79 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid a89eb57b-dab7-4a47-9b5e-882f957aee04)
+  )
+  (hierarchical_label "DI1" (shape input) (at 167.64 92.71 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid ae976a81-99fd-4034-8116-efb8b4bfd52b)
+  )
   (hierarchical_label "SDA" (shape input) (at 107.95 100.33 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid bc0e6dd5-550d-4a69-bdc5-225f1d10a4fd)
@@ -930,10 +938,10 @@
   (symbol (lib_id "Device:R") (at 185.42 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 42d4f89a-d018-49ed-88a0-5362ffbc58ef)
-    (property "Reference" "R4" (at 187.96 85.0899 0)
+    (property "Reference" "R13" (at 187.96 85.725 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "200" (at 187.96 87.6299 0)
+    (property "Value" "200" (at 187.96 88.265 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 183.642 86.36 90)
@@ -947,7 +955,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "R4") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -1423,10 +1431,10 @@
   (symbol (lib_id "Device:R") (at 185.42 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e758a4fe-10f5-4539-931d-908f71dd9e69)
-    (property "Reference" "R3" (at 187.96 77.4699 0)
+    (property "Reference" "R9" (at 187.96 78.105 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k" (at 187.96 80.0099 0)
+    (property "Value" "1k" (at 187.96 80.645 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 183.642 78.74 90)
@@ -1440,7 +1448,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/1cc7165a-e701-4677-b265-806db2aaedf3"
-          (reference "R3") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )

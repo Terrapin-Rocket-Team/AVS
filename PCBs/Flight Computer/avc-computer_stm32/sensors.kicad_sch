@@ -531,7 +531,7 @@
   (symbol (lib_id "Device:R") (at 45.72 64.77 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 05d277fb-ac1f-4521-8dd9-756cc125cd04)
-    (property "Reference" "R5" (at 43.18 64.77 90)
+    (property "Reference" "R10" (at 43.18 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4.7K" (at 40.64 64.77 90)
@@ -548,7 +548,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/0097ce40-7767-41a4-a694-1129b95a764c"
-          (reference "R5") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -557,10 +557,10 @@
   (symbol (lib_id "Device:R") (at 106.68 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 05f8d459-d8fd-4508-91c0-514390f23867)
-    (property "Reference" "R7" (at 106.68 69.85 90)
+    (property "Reference" "R12" (at 106.68 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10K" (at 106.68 72.39 90)
+    (property "Value" "10K" (at 106.68 73.66 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 106.68 77.978 90)
@@ -574,7 +574,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/0097ce40-7767-41a4-a694-1129b95a764c"
-          (reference "R7") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -786,7 +786,7 @@
   (symbol (lib_id "Device:R") (at 48.26 64.77 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a25e3abb-4bd6-4cc7-a265-812756fda67d)
-    (property "Reference" "R6" (at 53.34 64.77 90)
+    (property "Reference" "R11" (at 53.34 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4.7K" (at 50.8 64.77 90)
@@ -803,7 +803,7 @@
     (instances
       (project "avc-computer"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/0097ce40-7767-41a4-a694-1129b95a764c"
-          (reference "R6") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
