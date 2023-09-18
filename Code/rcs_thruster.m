@@ -15,7 +15,7 @@ tank_radius = 0.0762; % Meters
 tank_height = 0.0762 * 2; % Meters
 material_tensile_strength = 23.4 * 1000000; % PA
 safety_factor = 3; 
-min_exit_pressure = ambient_pressure / 3; % Exit pressure must be more than 1/3 of the ambient pressure
+min_exit_pressure = ambient_pressure; % This is the nozzle exit pressure that we are optimizing for. Since we're operating at the surface we'll just keep it the same as the surface pressure
 
 %%% Outputs
 throat_diam = throat_diam_mm / 1000; % Converted to meters
