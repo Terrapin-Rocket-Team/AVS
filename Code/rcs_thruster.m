@@ -19,22 +19,17 @@ min_exit_pressure = ambient_pressure; % This is the nozzle exit pressure that we
 
 %%% Outputs
 throat_diam = throat_diam_mm / 1000; % Converted to meters
-regulated_air_density = regulated_pressure / (R * initial_tank_temp);
-[~, ~, ~, throat_density_ratio, ~] = flowisentropic(gamma, 1); % Get density at throat
-throat_air_density = regulated_air_density * throat_density_ratio;
-
 throat_area = pi * (throat_diam / 2) ^ 2;
 tank_volume = pi * (tank_radius ^ 2) * tank_height;
 critical_pressure_ratio = (2/(gamma + 1))^(gamma / (gamma - 1)); % Throat pressure over upstream pressure
 max_throat_pressure = critical_pressure_ratio * regulated_pressure; % Throat pressure must be below this number in order for engine to operate
-mass_flow_rate = ((throat_area * regulated_pressure) / sqrt(initial_tank_temp)) * sqrt(gamma/R) * ((gamma+1)/2) ^ (-1 * ((gamma+1)/(2 * (gamma - 1))));
 
 % Calculate exit mach
 min_test_mach = 0;
 max_test_mach = 10;
 dm = 0.0001;
-threshold = 1; % Calculated exit pressure must be within this value of the desired exit pressure
-test_mach = threshold;
+threshold = 10; % Calculated exit pressure must be within this value of the desired exit pressure
+test_mach = dm;
 test_area_ratio = 0;
 test_exit_pressure = 0;
 test_temperature_ratio = 0;
@@ -43,8 +38,8 @@ test_density_ratio = 0;
 
 disp("Calculating exit mach number...");
 
-% Determines optimal expansion ratio to expand exhaust to 1/3 of the
-% ambient pressure
+% Determines optimal expansion ratio to expand exhaust to the ambient
+% pressure
 while abs(min_exit_pressure - test_exit_pressure) > threshold
     [t_mach, t_T, t_P, t_rho, t_area] = flowisentropic(gamma, test_mach); % Determines the mach number and pressure ratio between throat and exit
     test_pressure_ratio = t_P;
@@ -61,21 +56,6 @@ while abs(min_exit_pressure - test_exit_pressure) > threshold
     end
 end
 
-% Determines exit mach number for provided area ratio
-%{
-test_area_ratio = 0;
-desired_area_ratio = 10;
-test_exit_pressure = 0;
-while abs(test_area_ratio - desired_area_ratio) > threshold
-    [t_mach, t_T, t_P, t_rho, t_area] = flowisentropic(gamma, test_mach);
-    test_area_ratio = t_area;
-    test_exit_pressure = t_P * max_throat_pressure;
-
-    test_mach = test_mach + dm;
-end
-%}
-
-%disp("Converged on exit mach: " + test_mach);
 exit_mach_number = test_mach;
 expansion_ratio = test_area_ratio;
 exit_area = throat_area * expansion_ratio;
@@ -83,16 +63,36 @@ exit_diam = sqrt(exit_area/pi) * 2;
 exit_diam_mm = exit_diam * 1000;
 temperature_ratio = test_temperature_ratio;
 pressure_ratio = test_pressure_ratio;
-exit_pressure = max_throat_pressure * pressure_ratio;
-exit_density_ratio = test_density_ratio;
-exit_density = throat_air_density * exit_density_ratio;
-
-exit_speed_of_sound = sqrt(gamma * (exit_pressure / exit_density));
-exit_velocity = exit_mach_number * exit_speed_of_sound;
-
 throat_curvature_radius_mm = throat_radius_factor * exit_diam_mm / 2;
-thrust = mass_flow_rate * exit_velocity + ((t_P * regulated_pressure) - ambient_pressure) * exit_area;
-thrust_lb = thrust * 0.224;
+
+pressure = regulated_pressure;
+tank_temp = initial_tank_temp;
+
+dt = 0.1;
+sim_max_len = 100;
+t = 0;
+
+while t < sim_max_len
+    regulated_air_density = pressure / (R * tank_temp);
+    [~, ~, ~, throat_density_ratio, ~] = flowisentropic(gamma, 1); % Get density at throat
+    throat_air_density = regulated_air_density * throat_density_ratio;
+    mass_flow_rate = ((throat_area * pressure) / sqrt(tank_temp)) * sqrt(gamma/R) * ((gamma+1)/2) ^ (-1 * ((gamma+1)/(2 * (gamma - 1))));
+    
+    exit_pressure = max_throat_pressure * pressure_ratio;
+    exit_density_ratio = test_density_ratio;
+    exit_density = throat_air_density * exit_density_ratio;
+    
+    exit_speed_of_sound = sqrt(gamma * (exit_pressure / exit_density));
+    exit_velocity = exit_mach_number * exit_speed_of_sound;
+    
+    thrust = mass_flow_rate * exit_velocity + ((t_P * pressure) - ambient_pressure) * exit_area;
+    thrust_lb = thrust * 0.224;
+
+    mass_spent = mass_flow_rate * dt; % Mass of propellant that has been used
+    
+
+    t = t + dt;
+end
 
 clc;
 disp("========  Results  ========");
