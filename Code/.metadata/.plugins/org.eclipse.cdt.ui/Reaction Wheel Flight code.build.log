@@ -1,20 +1,10 @@
-17:04:46 **** Incremental Build of configuration Debug for project Reaction Wheel Flight code ****
+23:18:24 **** Incremental Build of configuration Debug for project Reaction Wheel Flight code ****
 make -j16 all 
-arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m3 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/main.cpp:194:13: warning: 'void MX_I2C1_Init()' defined but not used [-Wunused-function]
-  194 | static void MX_I2C1_Init(void)
-      |             ^~~~~~~~~~~~
-arm-none-eabi-g++ -o "Reaction Wheel Flight code.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kking\OneDrive\Documents\AVS\Code\Reaction Wheel Flight code\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Reaction Wheel Flight code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: Reaction Wheel Flight code.elf
- 
 arm-none-eabi-size   Reaction\ Wheel\ Flight\ code.elf 
-arm-none-eabi-objdump -h -S  Reaction\ Wheel\ Flight\ code.elf  > "Reaction Wheel Flight code.list"
    text	   data	    bss	    dec	    hex	filename
-  18480	    120	   1736	  20336	   4f70	Reaction Wheel Flight code.elf
+  24112	    120	   2624	  26856	   68e8	Reaction Wheel Flight code.elf
 Finished building: default.size.stdout
  
-Finished building: Reaction Wheel Flight code.list
- 
 
-17:04:46 Build Finished. 0 errors, 1 warnings. (took 622ms)
+23:18:24 Build Finished. 0 errors, 0 warnings. (took 278ms)
 
